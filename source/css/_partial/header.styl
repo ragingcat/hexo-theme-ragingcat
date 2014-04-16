@@ -1,19 +1,26 @@
 body
   >header
+    width 100%
+    // box-shadow 2px 4px 5px hsla(0,1%,1%,.2)
     background url("../img/banner.jpg") center #000
-    // background-image: url("images/111.jpg"); center #000
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    height: 170px;
-    // height: 180px;
-    padding: 10px 0 33px mg-lft;
-    margin: 0 auto;
+    color color-white
+    padding 1em 0 0.8em
+    @media tablet
+      padding 1.8em 0 1.5em
+    >div
+      width 95%
+      margin 0 auto
+      position relative
+      overflow hidden
+      @media tablet
+        width 93%
     a
-      display inline-block //很重要，没有它的话，搜索框和旁边的对不齐
-
+      display block
+      color color-white
 
 #textlogo
+  float left
+  width 75%
   a
     color: #fff
 
@@ -24,7 +31,7 @@ body
   h1.site-name
     font-family font-hd1
     font-size 3.0em
-    margin-top: 20px;
+    margin-top: 0px;
     // margin-top: .1em;
     line-height: 1;
     text-align: left
@@ -44,19 +51,25 @@ body
       font-size 1.4em
 
 .navbar
-  line-height: 2.5em;
-
+  position absolute
+  width 2em
+  right 0em
+  top 1em
+  padding 0.5em
   @media tablet
     display none
 
 .navbutton::before
   font-family font-icon-family
   font-smoothing()
+  content "\f0c9"
 
 .navmobile::before
   padding-left 1em
 
 header nav
+  float left
+  width 100%
   a
     color: #fff
   font-family: font-nav
@@ -68,9 +81,8 @@ header nav
     margin-top 1em
     max-height none
   font-size 1.1em
-  // padding-top 0.5em
-  padding-bottom 1em
-  max-height 0.1em
+  padding-top 0.5em
+  max-height 0.01em
   transition max-height 1s ease-out
   ul
     @media tablet
@@ -96,8 +108,6 @@ header nav
 .search
   padding 0.1em 0 0 1em
   input
-    -webkit-appearance textfield
-    font-size 0.87em
     line-height line-height+0.2
     border 1px solid color-breen
     color color-white
