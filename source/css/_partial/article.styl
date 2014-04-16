@@ -1,0 +1,202 @@
+div.post, div.photo
+    padding: 0px 50px 0px mg-lft
+    position: relative;
+
+
+article
+
+  font-size font-size+15
+  header.article-info
+    a
+        display block
+        font-size: 1em;
+        color: color-title
+    time
+        a
+            font-family font-lkf
+            font-size 80%
+
+    h1.article-name
+        display: block
+        text-align left
+        margin: 0px 0 20px neg-mg-lft
+        span
+            font-family font-title
+            font-size: 1.7em;
+            background-color: color-title
+            color: #fff
+            padding: pad-v-tl pad-h-tl pad-v-tl mg-lft
+
+        a
+            &:hover
+                text-decoration none
+                // line-height line-height+0.5
+
+                display block
+                border-left mg-lft solid color-background
+                margin-left: neg-mg-lft
+                transition border-left .45s
+                span
+                    background-color: color-hove
+
+
+  .article-content
+    // padding 1.5em 4% // 这一行使正文内容显得向右缩进了一些
+    color color-content
+    font-size font-size
+    margin-top 1em
+    .kb
+      padding .1em .6em
+      border 1px solid color-gray
+      background-color code-color
+      color darken(color-gray,30%)
+      box-shadow 0 1px 0 rgba(0,0,0,0.2),0 0 0 2px color-white inset
+      border-radius 3px
+      display inline-block
+      margin 0 .1em;
+      text-shadow 0 1px 0 color-white
+      line-height line-height
+      white-space nowrap
+      font-size: 1em;
+      background-color: #ff66b2;
+      color: #fff;
+      padding: 5px 20px 7px 50px;
+    p, ul, li
+        font-family font-body
+        font-size 1.1em
+
+    h1,h2,h3
+      line-height 1.2em
+      padding-bottom 0.3em
+      margin-top 1.5em
+      border-bottom 1px solid lighten(color-gray,30%)
+    h3
+      margin-top .4em
+    h1
+      font-size font-size+120
+    h2
+      font-size font-size+100
+    h3
+      font-size font-size+70
+    h4,h5,h6
+      font-size font-size+20
+    h1,h2,h3,h3,h4,h5,h6
+      color color-heading
+      font-smoothing antialiased
+      >code
+        color darken(color-gray,10%)
+    hr
+      border-bottom .1em solid color-quote
+    strong
+      font-weight bold
+    em
+      font-style italic
+    acronym,abbr
+      border-bottom 1px dotted
+    >blockquote
+        p, ul, li
+          font-family: font-serif
+          font-size font-size-10
+    blockquote >p
+          font-family: font-serif
+          font-size font-size-10
+
+    blockquote
+      // font-family: font-serif
+      border-left .18em solid color-pink
+      background color-quote
+      margin 0.65em 0 0.65em 1.5em
+      padding-left .5em
+      line-height line-height
+      // font-size font-size-30
+      footer
+        background color-section
+        padding 0
+        margin 0
+        font-size 80%
+        line-height 1em
+      cite
+        font-style italic
+        padding-left 0.5em
+    ul,ol
+      padding-left 1.2em
+      font-size font-size
+      padding-top 0.7em
+      @media mini
+        padding-left 1.5em
+    ul li
+      list-style disc
+      text-align match-parent
+      //margin 0.5em 0
+    ol li
+      list-style-type decimal
+      //margin 0.5em 0
+    dl dt
+      font-weight blod
+    ul li>code,ol li>code,p code,strong code,em code
+      font-family font-mono
+      background color-code
+      color #D14
+      border 1px solid darken(color-code,10%)
+      padding 0 5px
+      margin 0 2px
+      font-size 90%
+      white-space nowrap
+      text-shadow 0 1px #fff
+      -webkit-border-radius 0.25em
+      border-radius 0.25em
+    p
+      line-height line-height
+      margin-top 0.7em
+      @media tablet
+        margin-top 1em
+    img,video,figure img
+      max-width 70%
+      //display block
+      //margin auto
+      height auto
+      vertical-align middle
+      padding-top 0.5em
+      @media tablet
+        padding-top 0.7em
+    figcaption,.caption
+      text-align center
+      display block
+      font-size 0.9em
+      font-weight blod
+    .video-container
+      position relative;
+      padding-top 56%
+      height 0
+      overflow hidden
+      iframe,object,embed
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        margin-top 0
+    table
+      width 100%
+      border-collapse collapse
+      border-spacing 0
+      th
+        font-weight bold
+        border-bottom 3px solid lighten(color-gray,30%)
+        padding-bottom 0.5em
+      td
+        border-bottom 1px solid lighten(color-gray,30%)
+        padding 10px 0
+    .pullquote
+      text-align left
+      width 45%
+      margin 0
+      border none
+    .left
+      margin-left 0.5em
+      margin-right 1em
+      float left
+    .right
+      margin-right 0.5em
+      margin-left 1em
+      float right

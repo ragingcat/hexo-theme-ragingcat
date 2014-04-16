@@ -1,0 +1,30 @@
+<section class="<%= item.layout %>" itemscope itemprop="blogPost">
+    <div id="main-col" class="alignleft">
+    <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished">
+      <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url"  class="article-time"><%= item.date.format(config.date_format) %></a>
+    </time>
+  <h1 itemprop="name" class="post-title">
+  <% if (item.link) { %>
+    <a href="<%- item.link %>" target="_blank"><span><%= item.link %></span></a>
+  <% } else{ %>
+    <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url"><span><%= item.title %></span></a>
+  <% } %>
+</h1>
+
+    <% if (desc){ %>
+     <% if(item.description){ %>
+      <p itemprop="description"><%- item.description %></p>
+      <% } else if(item.excerpt){ %>
+       <p itemprop="description" ><%= strip_html(item.excerpt).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 140) %></p>
+      <% } else {%>
+           <p itemprop="description" ><%= strip_html(item.content).replace(/^\s*/, '').replace(/\s*$/, '').substring(0, 140) %>...</p>
+        <% } %>
+    <% } %>
+
+    <div class="more-link">
+            <!-- <a href="<%- config.root %><%- item.path %>" class="more-link"><span>Read More</span></a> -->
+      <div class="clearfix"></div>
+    </div>
+
+</div>
+</section>

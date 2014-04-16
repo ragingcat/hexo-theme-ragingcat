@@ -1,0 +1,113 @@
+body
+  >header
+    background url("../img/banner.jpg") center #000
+    // background-image: url("images/111.jpg"); center #000
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    height: 170px;
+    // height: 180px;
+    padding: 10px 0 33px mg-lft;
+    margin: 0 auto;
+    a
+      display inline-block //很重要，没有它的话，搜索框和旁边的对不齐
+
+
+#textlogo
+  a
+    color: #fff
+
+  a:hover
+    text-decoration: none;
+    text-shadow: 0 0 0.2em #fff;
+
+  h1.site-name
+    font-family font-hd1
+    font-size 3.0em
+    margin-top: 20px;
+    // margin-top: .1em;
+    line-height: 1;
+    text-align: left
+
+  h2.blog-motto
+    font-family font-hd2
+    line-height: 1;
+    margin-top: .5em;
+    margin-bottom 1.5em
+    text-align: left
+    font-size 2.0em
+
+
+    @media mini
+      font-size font-size
+    @media tablet
+      font-size 1.4em
+
+.navbar
+  line-height: 2.5em;
+
+  @media tablet
+    display none
+
+.navbutton::before
+  font-family font-icon-family
+  font-smoothing()
+
+.navmobile::before
+  padding-left 1em
+
+header nav
+  a
+    color: #fff
+  font-family: font-nav
+  @media phone
+    width 50%
+  @media tablet
+    float right
+    width auto
+    margin-top 1em
+    max-height none
+  font-size 1.1em
+  // padding-top 0.5em
+  padding-bottom 1em
+  max-height 0.1em
+  transition max-height 1s ease-out
+  ul
+    @media tablet
+      float right
+  ul li
+    @media tablet
+      float left
+  ul li a
+    padding 0.2em 0 0.2em 1em
+    @media tablet
+      padding 0.2em 1.5em
+    &:hover
+      background saturate(lighten(color-pink, 5%), 10%)
+      // background saturate(lighten(color-brown, 5%), 10%)
+      // text-shadow: 0 0 0.2em #fff
+
+      color color-brown
+      color color-font-nav
+
+.shownav
+  max-height 40em
+
+.search
+  padding 0.1em 0 0 1em
+  input
+    -webkit-appearance textfield
+    font-size 0.87em
+    line-height line-height+0.2
+    border 1px solid color-breen
+    color color-white
+    background transparent
+    width 80%
+    padding-left 0.5em
+    @media tablet
+      width 8em
+      transition .5s width
+      &:focus
+        width 15em
+  label
+    display none

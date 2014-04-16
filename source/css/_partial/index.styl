@@ -1,0 +1,270 @@
+/*! index layout */
+#container
+  // background url("../img/grey.png") center #000
+  background color-background
+
+  width 95%
+  margin 0 auto
+  overflow hidden
+  @media mini
+    width 96%
+  @media tablet
+    width 100%
+  @media desktop
+    width 82%
+
+pad-v-ml=.3em
+pad-h-ml=.9em
+pad-v-tl=.1em
+pad-h-tl=.8em
+color-bg-ml=#ccc
+color-hove-ml=color-title
+// color-hove-ml=#9DC8C8
+
+section.post
+    a.article-time
+        &:before
+            font-family font-icon-family
+            padding-right: 5px;
+            content "\f016"
+            font-smoothing()
+
+section.photo
+    a.article-time
+        &:before
+            font-family font-icon-family
+            padding-right: 5px;
+            content "\f030"
+            font-smoothing()
+
+div.more-link
+    span
+        &:before
+            font-family font-icon-family
+            padding-right: 1px;
+            content "\f054"
+            font-smoothing()
+
+
+#main
+  line-height line-height+0.2
+  @media tablet
+    margin 2em 0 0
+    width 67%
+    float left
+
+    // transition margin 0.5s ease-out
+
+  section.comment
+          font-family font-serif
+  section.post, section.photo, section.page
+    font-size font-size+10
+    margin-bottom 0.125em
+    margin-left mg-lft
+    p, time
+        margin-left: 0
+    p
+        font-family font-body
+        font-size 1.1em
+    a
+        display block
+        font-family font-title
+        font-size: 1em;
+        color: color-title
+        &:hover
+            // text-decoration underline
+            // color color-pink
+
+    time
+        a
+            font-family font-lkf
+            font-size .8em
+            &:hover
+                // text-decoration underline
+                text-shadow: 0 0 0.2em #fff
+
+    h1.post-title
+        margin: 0 0 .5em neg-mg-lft
+    h1.arch
+        margin: 0 0 2.5em 0
+    h1
+        display: block
+        text-align left
+        span
+            font-size: 1.7em;
+            background-color: color-title
+            color: #fff
+        a
+            &:hover
+                text-decoration none
+
+                display block
+                border-left mg-lft solid color-background
+                margin-left: neg-mg-lft
+                transition border-left .45s
+                span
+                    background-color: color-hove
+    h1.post-title
+        span
+            padding: pad-v-tl pad-h-tl pad-v-tl mg-lft
+    h1.arch
+        span
+            padding: pad-v-tl pad-h-tl pad-v-tl 0
+
+    div.more-link
+        display: inline-block
+        text-align left
+        margin-top -.5em
+        margin-bottom 4em
+        padding-top: 1em;
+        // color: #999;
+        font-size: 0.9em;
+        line-height: 16px;
+
+        // margin: 0px 0 20px neg-mg-lft
+        span
+            font-size: 1em;
+            background-color: color-bg-ml
+            color: #fff
+            padding: pad-v-ml pad-h-ml pad-v-ml pad-h-ml
+        a
+            &:hover
+                // box-shadow: 0 0 2px rgba(50,50,50,0.3);
+                text-decoration none
+                span
+                    background-color: color-hove-ml
+
+.moveMain
+  margin-left 10% !important
+
+#page-nav
+  background color-section
+  text-align center
+  overflow hidden
+  a
+    display inline-block
+    padding 0.5em 1em
+  a
+    color color-blue
+    &:hover
+      background color-gray
+      color color-theme
+  .prev
+    float left
+    border-left 0.5em solid color-gray
+    transition border-left .5s
+    &:hover
+      border-left 0.5em solid color-theme
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f053"
+      padding-right 0.5em
+  .next
+    float right
+    span:before
+      font-family font-icon-family
+      font-smoothing()
+      content "\f054"
+      padding-left 0.5em
+  .page-number
+    display none
+    padding 0.5em 1em
+    @media mini
+      display inline-block
+  .current
+    color darken(color-gray,10%)
+    font-weight bold
+  .space
+    color color-blue
+
+/*! page layout */
+.page
+  @media tablet
+    margin-left 10% !important
+
+/*! archive layout */
+.category-icon:before,.tag-icon:before,.archive-icon:before
+  font-family font-icon-family
+  font-smoothing()
+  color color-title
+  color color-brown
+  font-size font-size
+  padding-right 0.3em
+
+.category-icon:before
+  content "\f07b"
+
+.tag-icon:before
+  content "\f02c"
+
+.archive-icon:before
+  // content "\f187"
+  content "\f02e"
+  // padding-left 3px
+  padding-right: 5px;
+
+color-link = color-pink
+.archive-list-count
+    color color-link
+.archive-list-link, .archive-list-count
+    font-family font-lkf
+    font-size 1.5em
+
+.archive-title
+  margin 1em 0
+  width 97%
+  padding 2em 0 2em 3%
+  @media tablet
+    margin 2em 0
+    width 18.5%
+    padding-left 0.5%
+    float left
+  background color-section
+  border-left 0.5em solid color-pink
+  h2
+    width 90%
+    color color-blue
+    font-size font-size+60
+  a
+    color color-blue
+    transition color .5s
+    &:hover
+      color color-theme
+      transition color .5s
+.current
+  color color-theme !important
+
+.archive-part
+  @media mini
+     min-height 200px
+  @media tablet
+    width 78% !important
+    float right
+    margin: 0px 0 20px -100px
+
+    // margin-left 2% !important
+  // section.post
+  //   width 100%
+  //   time
+  //     font-size 1.1em !important
+  //     float left
+  //     @media phonemax
+  //       width 100%
+  //     @media tablet
+  //       width 20%
+/*    @media mini
+      float left
+      width 50%
+    @media tablet
+      width 33.333%  */
+
+.archive-nav
+  @media mini
+    width 100%
+    float left
+    margin-top 1em
+
+/*! tags&categories layout */
+.all-list-box
+  min-height 400px

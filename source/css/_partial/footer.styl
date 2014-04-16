@@ -1,0 +1,85 @@
+// color-footer=#A50424
+// color-footer=#A25C66
+// color-footer=#F4445F
+color-footer=color-dred
+// color-footer=color-brown
+#footer
+  background color-footer
+  // // padding-top 0px
+  // margin 0 auto
+
+.info
+  text-align center
+  if ShowCustomFont
+    font-family font-custom-family
+    font-smoothing()
+    font-size font-size+50
+    line-height 1.3em
+  else
+    font-family font-default
+    line-height line-height+0.15
+  // width 90%
+  margin 0 auto
+  color color-white
+  @media mini
+    width 75%
+  p.l1
+    font-size font-size +35
+  p.l2
+    font-size font-size - 15
+
+.social-font
+  text-align center
+  a
+    padding 2.3em
+    width 44%
+    color color-white
+    font-size font-size+20
+    // text-shadow: 0 0 0.2em #fff
+
+    &:hover:before
+      // color color-green
+      // color color-font-nav
+      color color-dgreen
+      text-shadow: 0 0 0.5em #fff;
+
+
+.icon-weibo:before,.icon-github:before,.icon-twitter:before,.icon-facebook:before,.icon-stack-overflow:before,.icon-email:before
+  font-family font-icon-family
+  font-smoothing()
+
+.icon-weibo:before
+  content "\f18a"
+.icon-github:before
+  content "\f09b"
+.icon-twitter:before
+ content "\f099"
+.icon-facebook:before
+  content "\f09a"
+.icon-stack-overflow:before
+  content "\f16c"
+.icon-email:before
+  content: "\f003"
+.icon-douban:before
+  font-family font-icon-diao
+  font-smoothing()
+  content "\f111"
+
+.copyright
+  if ShowCustomFont
+    font-smoothing()
+    font-family font-custom-family
+  else
+    font-family font-default
+    font-size 0.6em
+  // width 100%
+  color color-white
+  text-align center
+  a
+    color color-heading
+
+    &:hover
+      color #00CC99
+      text-decoration underline
+      text-shadow: 0 0 0.2em #fff
+

@@ -1,0 +1,11 @@
+<header class="article-info clearfix">
+    <time datetime="<%= date_xml(item.date) %>" itemprop="datePublished">
+      <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url" class="article-time"><%= item.date.format(config.date_format) %></a>
+    </time>
+
+  <h1 itemprop="name" class="article-name">
+    <% if(item.link) { %>
+      <a href="<%- item.link %>" target="_blank" title="<%= item.title %>"><span><%= item.title %></span></a><% } else { %>
+      <a href="<%- config.root %><%- item.path %>" title="<%= item.title %>" itemprop="url"><span><%= item.title %></span></a><% } %>
+  </h1>
+</header>

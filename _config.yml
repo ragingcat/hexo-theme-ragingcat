@@ -1,0 +1,76 @@
+##### Menu
+menu:
+  Home: /
+  Archives: /archives
+  # Reading: /reading
+  En: /categories/En
+  About: /about
+  关于: /cn
+
+## you can create `tags` and `categories` folders in `../source`.
+## And create a `index.md` file in each of them.
+## set `front-matter`as
+## layout: tags (or categories)
+## title: tags (or categories)
+## ---
+
+#### Widgets
+widgets:
+- category
+- tag
+- links
+- rss
+## provide six widgets:category,tag,rss,archive,tagcloud,links.
+## modify links in `/layout/_widget/links.ejs`.
+
+#### RSS
+rss: ## RSS address.
+
+#### Image
+favicon: img/favicon.ico   ## size:32px*32px,`.ico` is recommended
+
+#### Font
+ShowCustomFont: true
+## you can change custom font in `variable.styl` and `font.styl` which in the theme folder `/pacman/source/css`.
+
+#### Toc
+toc:
+  article: true   ## show contents in article.
+  aside: true     ## show contents in aside.
+## you can set both of the value to true of neither of them.
+## if you don't want display contents in a specified post,you can modify `front-matter` and add `toc: false`.
+
+#### Fancybox
+fancybox: true
+## if you use gallery post or want use fancybox please set the value to true.
+## if you want use fancybox in ANY post please copy the file `fancybox.js`.
+## in theme folder `scripts` to your hexo blog folder `../scritps`.
+
+
+#### Author information
+author:
+  intro_line2: "An omnivorous bipedal pseudo full stack engineer."
+  intro_line1: "This is Alvin Fan's personal blog."
+  weibo: rockcatorz     ## e.g. 436062867 for http://weibo.com/436062867
+  twitter: ragingat    ## e.g. yangjiansky for https://twitter.com/yangjiansky
+  github: RagingCat    ## e.g. A-limon for https://github.com/A-limon
+  email: andyfanzz@gmail.com    ##email
+
+#### Comment
+duoshuo:
+  enable: true  ## duoshuo.com
+  short_name: ragingcat   ## duoshuo short name.
+
+#### Share button
+jiathis:
+  enable: false ## if you use jiathis as your share tool,the built-in share tool won't be display.
+  id:    ## e.g.  your jiathis ID.
+
+#### Analytics
+google_analytics:
+  enable: true
+  id:     ## e.g. UA-xxxxxx-2 your google analytics ID.
+  site: ragingcat.info
+## You MUST upgrade to Universal Analytics first!
+## https://developers.google.com/analytics/devguides/collection/upgrade/?hl=zh_CN
+
