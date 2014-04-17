@@ -1,26 +1,32 @@
 body
   >header
-    width 100%
+    // width 100%
     // box-shadow 2px 4px 5px hsla(0,1%,1%,.2)
     background url("../img/banner.jpg") center #000
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+
     color color-white
     padding 1em 0 0.8em
     @media tablet
       padding 1.8em 0 1.5em
     >div
-      width 95%
+      // width 95%
       margin 0 auto
       position relative
       overflow hidden
-      @media tablet
-        width 93%
+      // @media tablet
+      //   width 93%
     a
       display block
       color color-white
 
 #textlogo
+  padding-left: mg-lft
   float left
-  width 75%
+  // width 75%
+  width 100%
   a
     color: #fff
 

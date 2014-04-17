@@ -9,7 +9,7 @@ div.page
 
 article
 
-  font-size font-size+15
+  font-size font-size+10
   header.article-info
     a
         display block
@@ -17,7 +17,7 @@ article
         color: color-title
     time
         a
-            font-family font-lkf
+            font-family font-time
             font-size 80%
 
     h1.article-name
@@ -47,7 +47,7 @@ article
   .article-content
     // padding 1.5em 4% // 这一行使正文内容显得向右缩进了一些
     color color-content
-    font-size font-size
+    font-size font-size+10
     margin-top 1em
     .kb
       padding .1em .6em
@@ -97,14 +97,6 @@ article
       font-style italic
     acronym,abbr
       border-bottom 1px dotted
-    >blockquote
-        p, ul, li
-          font-family: font-serif
-          font-size font-size-10
-    blockquote >p
-          font-family: font-serif
-          font-size font-size-10
-
     blockquote
       // font-family: font-serif
       border-left .18em solid color-pink
@@ -122,6 +114,12 @@ article
       cite
         font-style italic
         padding-left 0.5em
+    blockquote
+        >p, >ul, >li
+          font-family: font-serif
+          // font-size .9em
+          font-size 1em
+
     ul,ol
       padding-left 1.2em
       font-size font-size
@@ -144,7 +142,7 @@ article
       border 1px solid darken(color-code,10%)
       padding 0 5px
       margin 0 2px
-      font-size 90%
+      font-size 80%
       white-space nowrap
       text-shadow 0 1px #fff
       -webkit-border-radius 0.25em
@@ -154,6 +152,8 @@ article
       margin-top 0.7em
       @media tablet
         margin-top 1em
+      a
+          color color-title
     img,video,figure img
       max-width 70%
       //display block
