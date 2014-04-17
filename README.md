@@ -1,7 +1,7 @@
-Hexo-theme-RagingCat
+hexo-theme-ragingcat
 ====================
 
-RagingCat is a pretty cool colorful theme for [Hexo](http://zespia.tw/hexo/) based on [Pacman](https://github.com/A-limon/pacman) which is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/).
+Ragingcat is a pretty cool clean, simple and colorful theme for [Hexo](http://zespia.tw/hexo/) based on [Pacman](https://github.com/A-limon/pacman) which is a flat and responsive design theme for [Hexo](http://zespia.tw/hexo/).
 
 ## Theme Effect diagram
 ![](http://ww4.sinaimg.cn/large/6bbb14bdgw1efh6wk8gmnj20zk0m879m.jpg)
